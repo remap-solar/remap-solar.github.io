@@ -1,44 +1,82 @@
+
+/* global and body settings */
+
 body {
-    margin: 60px auto;
-    width: 70%;
+    background-color: #FFFFFF;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 90%;
+    color: black;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+
+/* site top image */
+
+#header-image {
+    height: 240px;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+}
+
+#header-image p {
+    margin: 0px;
     padding: 0px;
-    list-style: none;
+    padding-top: 80px;
+    padding-left: 10px;
+    font-size: 50px;
     font-weight: bold;
-    color: yellow;
+    font-size: 40px;
+    color: #006600;
+    text-shadow: 0 0 20px white, 0 0 18px white, 0 0 16px white, 0 0 14px white, 0 0 12px white, 0 0 10px white, 0 0 8px white, 0 0 6px white;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+/* nav bar */
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 0px solid #dcddde;
+    background-color: #ffffff;
+    border-radius: 0px;
+    /*box-shadow: 0 0 8px #eee;*/
+    background-color: #444;
+    font-size: 1.3em;
 }
-a {
+
+nav ul {
+    margin:0;
+    padding:0;
+    padding: 0px;
+    display: block;
+    list-style-type:none;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    float: left;
+    border-right: 2px solid #F3F3F3;
+    /*border-left: 1px solid #DDDDDD;*/
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.nav a {
+text-decoration:none;
+color: #F3F3F3;
 }
 
-ul.posts li {
-    list-style: none;
+nav li:hover {
+    background: #E5E400;
+    color: #FFF;
+}
+
+/* headers */
+h2 {
+    color: #E5E400;
+}
+
+h2.nonsolar {
+    color: #000000;
 }
