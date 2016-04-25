@@ -1,32 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<meta charset="utf-8">
-<title>REMap-SOLAR</title>
-<meta name="description" content="A site for the Philippine Renewable Energy Resource Mapping from LiDAR Surveys (REMap) SOLAR Component">
-<meta name="author" content="Ben Hur S. Pintor">
-<link rel="shortcut icon" href="img/solar_s.png">
-<link rel="image_src" href="img/solar_l.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REMap - Solar</title>
 
-<!--Google Fonts-->
-<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <meta name="description" content="A site for the Philippine Renewable Energy Resource Mapping from LiDAR Surveys (REMap) SOLAR Component">
+    <meta name="author" content="Ben Hur S. Pintor">
+    <link rel="shortcut icon" href="img/solar_s.png">
+    <link rel="image_src" href="img/solar_l.png" />
 
-<!--bower-->
-<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
 
-<!--custom style-->
-<link rel="stylesheet" href="css/custom.css">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="components/font-awesome-4.6.1/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="components/mdb-3.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="components/mdb-3.3.3/css/mdb.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="http://mdbootstrap.com/mdbcdn/mdb.min.css">
+
+    <!-- Leaflet -->
+    <!-- <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" /> -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    
+    
 </head>
+
 <body>
 
-<div id="header">
-<h1>REMap - Solar</h1>
-<h2>Philippine Renewable Energy Resource Mapping from LiDAR Surveys (Solar Component)</h2>
-</div>
-    
+    <div id="header">
+    <h1>REMap - Solar</h1>
+    <h2>Philippine Renewable Energy Resource Mapping from LiDAR Surveys (Solar Component)</h2>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script> -->
+    <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Material Design Bootstrap -->
+    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/mdb.js"></script> -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet -->
+    <!-- <script type="text/javascript" src="components/leaflet-0.7.7/leaflet.js"></script> -->
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+
 </body>
+
+
+<script type="text/javascript">
+    var officemap = L.map("map", {
+        zoomControl: true,
+        zoom: 18,
+        maxZoom: 19,
+        minZoom: 5,
+        keyboardPanOffset: 0,
+        scrollWheelZoom: true
+    });
+    officemap.setView([14.656487159193421, 121.06958001852037], 17);
+
+    var basemap = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        maxZoom: 19, 
+        attribution: '&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    officemap.addLayer(basemap);
+    
+    var marker = L.marker([14.656487159193421, 121.06958001852037]);
+    marker.addTo(officemap);
+    marker.bindPopup("<b>Phil-LiDAR 2: REMap</b><br><em>Applied Geodesy and Space Technology Laboratory</em><br>Room 406, Melchor Hall, College of Engineering<br>University of the Philippines Diliman<br>Quezon City 1101<br><br><b>Telephone: </b>(+63)-2-981-8500<br><b>Telefax: </b>(+63)-2-920-8924").openPopup();
+
+</script>
+
+
+</html>
