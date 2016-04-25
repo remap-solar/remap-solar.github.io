@@ -1,0 +1,53 @@
+.ArchitectsDaughter {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.RobotoSlab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.AlegreyaSans {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.Bitter {
+  font-family: 'Bitter', serif;
+}
+
+.OpenSansCondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.CinzelDecorative {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+#nav div {
+    background-color:
+}
+
+#header {
+  height: 305px;
+  text-indent: 0px;
+  margin-bottom: 0%;
+  background: url('../img/header/header_site.png');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#header h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 78px;
+  line-height: 72px;
+  margin-left: 5%;
+  padding-top: 3%;
+  color: #0f0f0f
+}
+
+#header h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+  margin-left: 5%;
+  line-height: 24px;
+  color: #4f4f4f;
+}
