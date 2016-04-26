@@ -15,36 +15,43 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <!-- Material Design Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Using CDN -->
     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> 
+    
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="http://mdbootstrap.com/mdbcdn/mdb.min.css">
+    <!-- <link rel="stylesheet" href="http://mdbootstrap.com/mdbcdn/mdb.min.css"> -->
+    
     <!-- Leaflet -->
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" /> -->
+
+    <!-- Using Componets -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="components/font-awesome-4.6.1/css/font-awesome.min.css">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="components/mdb-3.3.3/css/bootstrap.min.css">
+    
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="components/mdb-3.3.3/css/mdb.min.css">
+    
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
- 
-    <!-- Using Componets -->
-    <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="components/font-awesome-4.6.1/css/font-awesome.min.css"> -->
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="components/mdb-3.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Material Design Bootstrap -->
-    <!-- <link href="components/mdb-3.3.3/css/mdb.css" rel="stylesheet"> -->
-    <!-- Leaflet -->
-    <!-- <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" /> -->
-
     
 </head>
 
@@ -65,11 +72,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">REMap-SOLAR</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#team">The Team</a></li>
-                        <li><a href="#tutorials-manuals">Tutorials/Manuals</a></li>
-                        <li><a href="#contact">Contact us</a></li>
+                        <li id="nav"><a href="#">REMap-SOLAR</a></li>
+                        <li id="nav"><a href="#about">About</a></li>
+                        <li id="nav"><a href="#team">The Team</a></li>
+                        <li id="nav"><a href="#tutorials-manuals">Tutorials/Manuals</a></li>
+                        <li id="nav"><a href="#contact">Contact us</a></li>
                     </ul>
 
                 </div>
@@ -85,13 +92,13 @@
             <div class="mask rgba-black-light">
                 <div class="container">
                     <div class="verticalcenter text-center white-text">
-                        <h2>Philippine Renewable Energy Resource Mapping from LiDAR Surveys<br>SOLAR Component</h2>
+                        <h2 id="remap">Philippine Renewable Energy Resource Mapping from LiDAR Surveys<br>(SOLAR Component)</h2>
                         <hr>
-                        <h3>REMap - SOLAR</h3>
+                        <h3 id="remap-solar">REMap - SOLAR</h3>
                         <!--Call to action buttons-->
                         <!--Call to action buttons-->
-                        <a href="#about" class="btn btn-default waves-effect waves-light"><i class="fa fa-book right"></i>Learn more</a>
-                        <a href="#contact" class="btn btn-primary waves-effect waves-light"><i class="fa fa-envelope-o right"></i>Contact us</a>
+                        <a id="btn" href="#about" class="btn btn-default waves-effect waves-light"><i class="fa fa-book right"></i>Learn more</a>
+                        <a id="btn" href="#contact" class="btn btn-primary waves-effect waves-light"><i class="fa fa-envelope-o right"></i>Contact us</a>
                     </div>
                 </div>
             </div>
@@ -101,21 +108,78 @@
 
     <main>
         <!--Main Container-->
-        <div class="container">
+<!--         <div class="container"> -->
 
             <!--Section: About-->
-            <section id="about">
-                <div class="divider-new">About</div>
+            <section id="about" class="container-fluid about-bg-img">
+                <div id="font-divider" class="divider-new">About</div>
 
                 <div class="row">
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img class="img-responsive" src="img/site/logo-solar.png" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="text-center">
+                                The <em>SOLAR</em> component of REMap is tasked with mapping the solar energy resource in the country as well as determing the suitability of sites for solar energy (Photovoltaic) farms using different RS/GIS and other geospatial technologies.
+                                </p>
+                            </div>
 
-                    <div class="col-md-12 text-center">
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
-
+                        </div>
+                        <!--Image Card-->
                     </div>
+                    <!--/.First Column-->
+
+                    <!--Second column-->
+                    <div class="col-md-4">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img class "img-about" src="img/site/logo-remap.png" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="text-center">
+                                The <em>Philippine Renewable Energy Resource Mapping from LiDAR Surveys</em> (REMap) Project is one of the component projects of the Phil-LiDAR 2 Program. Its objective is to develop algorithms and methodologies in order to assess the biomass, hydro, solar, and wind energy resources in the country.
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.Second Column-->
+
+                    <!--Third column-->
+                    <div class="col-md-4">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img class "img-about" src="img/site/logo-lidar2.png" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="text-center">
+                                The <em>Nationwide Detailed Resources Assessment using LiDAR</em> (Phil-LiDAR 2) is a research program funded by the Philippines' Department of Science and Technology (DOST) to provide detailed  inventory of agricultural, coastal, forest, hydrologic, and renewable energy resources using LiDAR and other remotely sensed data.
+                                </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.Third Column-->
+                    
+
+
 
                 </div>
 
@@ -123,16 +187,14 @@
             <!--/.Section: About-->
 
             <!--Section: Team-->
-            <section id="team">
-                <div class="divider-new">The Team</div>
+            <section id="team" class="container-fluid">
+                <div id="font-divider" class="divider-new">The Team</div>
 
                 <div class="row">
 
                     <div class="col-md-12 text-center">
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
+                        <p>#SOLARge</p>
 
                     </div>
 
@@ -142,103 +204,106 @@
             <!--/.Section: Team-->
 
             <!--Section: Tutorials/Manuals-->
-            <section id="tutorials-manuals">
-                <div class="divider-new">Tutorials / Manuals</div>
+            <section id="tutorials-manuals" class="container-fluid">
+                <div id="font-divider" class="divider-new">Tutorials / Manuals</div>
 
                 <div class="row">
 
                     <!--First column-->
-                    <div class="col-md-3">
-                        <!--Image Card-->
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <div class="view overlay hm-white-slight z-depth-1">
-                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
-                                    <div class="mask waves-effect"></div>
-                                </div>
-
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>Solar Radiation</em></span>
+                                <p>A brief introduction into the concepts involved in solar radiation modelling.</p>
                             </div>
-                            <div class="card-content">
-                                <h5>Heading</h5>
-                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
                             </div>
-
                         </div>
-                        <!--Image Card-->
                     </div>
                     <!--/.First column-->
 
                     <!--Second column-->
-                    <div class="col-md-3">
-                        <!--Image Card-->
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <div class="view overlay hm-white-slight z-depth-1">
-                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
-                                    <div class="mask waves-effect"></div>
-                                </div>
-
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>GRASS GIS and r.sun</em></span>
+                                <p>An introduction to GRASS GIS and its solar radiation model r.sun.</p>
                             </div>
-                            <div class="card-content">
-                                <h5>Heading</h5>
-                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
                             </div>
-
                         </div>
-                        <!--Image Card-->
                     </div>
                     <!--/.Second column-->
 
                     <!--Third column-->
-                    <div class="col-md-3">
-                        <!--Image Card-->
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <div class="view overlay hm-white-slight z-depth-1">
-                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
-                                    <div class="mask waves-effect"></div>
-                                </div>
-
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>r.sun.remap.clear</em></span>
+                                <p>A GRASS GIS script that automates the computation of monhtly average clear-sky GHI rasters using an elevation raster and a Linke turbidity csv.</p>
                             </div>
-                            <div class="card-content">
-                                <h5>Heading</h5>
-                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
                             </div>
-
                         </div>
-                        <!--Image Card-->
                     </div>
                     <!--/.Third column-->
+                </div>
 
-                    <!--Fourth column-->
-                    <div class="col-md-3">
-                        <!--Image Card-->
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <div class="view overlay hm-white-slight z-depth-1">
-                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
-                                    <div class="mask waves-effect"></div>
-                                </div>
+            <!-- 2nd row -->
+            <div class="row">
 
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>~~~</em></span>
+                                <p>:D</p>
                             </div>
-                            <div class="card-content">
-                                <h5>Heading</h5>
-                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
                             </div>
-
                         </div>
-                        <!--Image Card-->
                     </div>
-                    <!--/.Fourth column-->
+                    <!--/.First column-->
 
+                    <!--Second column-->
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>~~~</em></span>
+                                <p>:D</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Second column-->
+
+                    <!--Third column-->
+                    <div class="col-md-4">
+                        <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title"><em>~~~</em></span>
+                                <p>:D</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">HERE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Third column-->
                 </div>
 
             </section>
             <!--/.Section: Tutorials/Manuals-->
 
             <!--Section: Contact-->
-            <section id="contact">
-                <div class="divider-new">Contact us</div>
+            <section id="contact" class="container-fluid">
+                <div id="font-divider" class="divider-new">Contact us</div>
 
                 <div class="row">
 
@@ -272,7 +337,7 @@
                             <li>
                             <i class="fa fa-envelope fa-3x center"></i>
                             <p style="text-align: center">
-                            remap-solar@gmail.com
+                            remap.solar@gmail.com
                             </li>
 
 
@@ -284,7 +349,7 @@
             </section>
             <!--/.Section: Contact-->
 
-        </div>
+<!--         </div> -->
         <!--/.Main Container-->
     </main>
 
@@ -316,23 +381,32 @@
 
     <!-- SCRIPTS -->
 
+    <!-- Using CDN -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="http://mdbootstrap.com/mdbcdn/mdb.min.js"></script>
+    
+    <!-- Leaflet -->
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <!-- Using components -->
     <!-- JQuery -->
     <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script> -->
+    
     <!-- Bootstrap core JavaScript -->
     <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/bootstrap.min.js"></script> -->
+
     <!-- Material Design Bootstrap -->
-    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/mdb.js"></script> -->   
+    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/mdb.js"></script> -->
+    
     <!-- Leaflet -->
     <!-- <script type="text/javascript" src="components/leaflet-0.7.7/leaflet.js"></script> -->
     
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="http://mdbootstrap.com/mdbcdn/mdb.min.js"></script>
-    <!-- Leaflet -->
-    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 
 </body>

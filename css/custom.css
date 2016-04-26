@@ -1,48 +1,75 @@
-.ArchitectsDaughter {
-  font-family: 'Architects Daughter', cursive;
-}
-
-.RobotoSlab {
-  font-family: 'Roboto Slab', serif;
-}
-
-.AlegreyaSans {
-  font-family: 'Alegreya Sans', sans-serif;
-}
-
-.Bitter {
-  font-family: 'Bitter', serif;
-}
-
-.OpenSansCondensed {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.CinzelDecorative {
-  font-family: 'Cinzel Decorative', cursive;
-}
-
-body {
-  background-color: white;
-}
-
 html,
 body {
   height: 100%;
 }
-.full-bg-img {  
-    background: url("http://mdbootstrap.com/images/regular/nature/img%20(1).jpg") no-repeat center center fixed;  
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 .top-nav-collapse {
-    background-color: #4285F4;
+    background-color: #37474F;
 }
 
-/*Maps*/
+/*FONTS*/
+#remap {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 60px;
+  color: #eceff1;
+}
+
+#remap-solar {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #eceff1;
+}
+
+#nav {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+#btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; 
+}
+
+#font-divider {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 48px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #2E2E2E;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+.card-title-0 {
+  line-height: 80%
+}
+
+
+/*IMAGES*/
+.full-bg-img {  
+  background: url("../img/site/pyra-2.png") no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about-bg-img {
+  background: url("../img/site/about.png")fixed;  
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;  
+}
+
+/*MAPS*/
 #map-contact {
   height: 500px;
 }
+
