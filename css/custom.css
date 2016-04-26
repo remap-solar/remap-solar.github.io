@@ -11,18 +11,19 @@ body {
 #remap {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 60px;
-  color: #eceff1;
+  color: #fafafa;
 }
 
 #remap-solar {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  color: #eceff1;
+  color: #fafafa;
 }
 
 #nav {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  color: #fafafa;
 }
 
 #btn {
@@ -33,6 +34,7 @@ body {
 #font-divider {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 48px;
+  color: #263238;
 }
 
 p {
@@ -61,15 +63,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-bg-img {
-  background: url("../img/site/about.png")fixed;  
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;  
+  background: url("../img/site/about.png") no-repeat fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
 }
 
 /*MAPS*/
 #map-contact {
-  height: 500px;
+  height: 400px;
 }
 
+#map-sensor {
+  height: 800px;
+}
