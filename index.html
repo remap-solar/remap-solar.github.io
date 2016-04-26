@@ -471,7 +471,7 @@
     sensormap.setMaxBounds([[3.0, 115.0],[23.0, 128.0]]);
     sensormap.setView([13.4, 121.8], 6);
 
-    sensormap.addLayer(Stamen_TonerLite)
+    sensormap.addLayer(Stamen_TonerLite);
 
     /*Sensors*/
     
@@ -480,8 +480,9 @@
         if (feature.properties && feature.properties.popupContent) {
             layer.bindPopup(feature.properties.popupContent);
         }
-    }
+    };
 
+/*
     var sensors = [
     {
         "type": "Feature",
@@ -631,7 +632,7 @@
 
     L.geoJson(sensors, {
         onEachFeature: onEachFeature
-    }).addTo(sensormap);
+    }).addTo(sensormap);*/
 
 
 </script>
