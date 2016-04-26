@@ -24,61 +24,319 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="components/font-awesome-4.6.1/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
-    <!-- <link href="components/mdb-3.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
     <!-- Material Design Bootstrap -->
-    <!-- <link href="components/mdb-3.3.3/css/mdb.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="http://mdbootstrap.com/mdbcdn/mdb.min.css">
-
     <!-- Leaflet -->
-    <!-- <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" /> -->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-    
+ 
+    <!-- Using Componets -->
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="components/font-awesome-4.6.1/css/font-awesome.min.css"> -->
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="components/mdb-3.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Material Design Bootstrap -->
+    <!-- <link href="components/mdb-3.3.3/css/mdb.css" rel="stylesheet"> -->
+    <!-- Leaflet -->
+    <!-- <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" /> -->
+
     
 </head>
 
 <body>
 
-    <div id="header">
-    <h1>REMap - Solar</h1>
-    <h2>Philippine Renewable Energy Resource Mapping from LiDAR Surveys (Solar Component)</h2>
-    </div>
+    <header>
 
-    <div id="map"></div>
+        <!--Navigation-->
+        <nav class="navbar navbar-fixed-top z-depth-1" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">REMap-SOLAR</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">The Team</a></li>
+                        <li><a href="#tutorials-manuals">Tutorials/Manuals</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!--/.Navigation-->
+
+    </header>
+
+    <!-- Section: Intro -->
+    <section class="full-bg-img">
+        <div class="view">
+            <div class="mask rgba-black-light">
+                <div class="container">
+                    <div class="verticalcenter text-center white-text">
+                        <h2>Philippine Renewable Energy Resource Mapping from LiDAR Surveys<br>SOLAR Component</h2>
+                        <hr>
+                        <h3>REMap - SOLAR</h3>
+                        <!--Call to action buttons-->
+                        <!--Call to action buttons-->
+                        <a href="#about" class="btn btn-default waves-effect waves-light"><i class="fa fa-book right"></i>Learn more</a>
+                        <a href="#contact" class="btn btn-primary waves-effect waves-light"><i class="fa fa-envelope-o right"></i>Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/. Section: Intro -->
+
+    <main>
+        <!--Main Container-->
+        <div class="container">
+
+            <!--Section: About-->
+            <section id="about">
+                <div class="divider-new">About</div>
+
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--/.Section: About-->
+
+            <!--Section: Team-->
+            <section id="team">
+                <div class="divider-new">The Team</div>
+
+                <div class="row">
+
+                    <div class="col-md-12 text-center">
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis atque dolores aperiam ea ducimus, consequuntur, nisi impedit veritatis facere voluptatibus recusandae doloremque optio rerum error nemo velit, rem natus expedita.</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!--/.Section: Team-->
+
+            <!--Section: Tutorials/Manuals-->
+            <section id="tutorials-manuals">
+                <div class="divider-new">Tutorials / Manuals</div>
+
+                <div class="row">
+
+                    <!--First column-->
+                    <div class="col-md-3">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-3">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.Second column-->
+
+                    <!--Third column-->
+                    <div class="col-md-3">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.Third column-->
+
+                    <!--Fourth column-->
+                    <div class="col-md-3">
+                        <!--Image Card-->
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <div class="view overlay hm-white-slight z-depth-1">
+                                    <img src="http://mdbootstrap.com/images/reg/reg%20(2).jpg" class="img-responsive" alt="">
+                                    <div class="mask waves-effect"></div>
+                                </div>
+
+                            </div>
+                            <div class="card-content">
+                                <h5>Heading</h5>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. </p>
+                            </div>
+
+                        </div>
+                        <!--Image Card-->
+                    </div>
+                    <!--/.Fourth column-->
+
+                </div>
+
+            </section>
+            <!--/.Section: Tutorials/Manuals-->
+
+            <!--Section: Contact-->
+            <section id="contact">
+                <div class="divider-new">Contact us</div>
+
+                <div class="row">
+
+                    <!--Leaflet Map-->
+                    <div class="col-md-8">
+                        <div id="map-contact" class="card-panel hoverable wow fadeInUp"></div>
+                    </div>
+
+                    <!-- Contact details -->
+                    <div class="col-md-4 text-center">
+                        <ul class="contact-data">
+
+                            <li>
+                            <i class="fa fa-map-marker fa-3x center"></i>
+                            <p style="text-align: center">
+                            <em>Applied Geodesy and Space Technology (AGST) Laboratory</em><br>
+                                MH 406, Melchor Hall<br>
+                                College of Engineering<br>
+                                University of the Philippines Diliman<br>
+                                Quezon City 1101, Philippines</p>
+                            </li>
+
+                            <li>
+                            <i class="fa fa-phone fa-3x center"></i>
+                            <p style="text-align: center">
+                            +63 2 981-8500 (loc 3147)
+                            </li>
+
+                            <li>
+                            <i class="fa fa-envelope fa-3x center"></i>
+                            <p style="text-align: center">
+                            remap-solar@gmail.com
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+            <!--/.Section: Contact-->
+
+        </div>
+        <!--/.Main Container-->
+    </main>
+
+    <footer class="page-footer blue center-on-small-only">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center rgba-black-light">
+            <div class="container-fluid">
+                © 2015 Copyright: <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
+            </div>
+        </div>
+    </footer>
+
 
     <!-- SCRIPTS -->
 
     <!-- JQuery -->
     <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script> -->
-    <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script>
-
     <!-- Bootstrap core JavaScript -->
     <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/bootstrap.min.js"></script> -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
     <!-- Material Design Bootstrap -->
-    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/mdb.js"></script> -->
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/mdb.js"></script> -->   
     <!-- Leaflet -->
     <!-- <script type="text/javascript" src="components/leaflet-0.7.7/leaflet.js"></script> -->
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="http://mdbootstrap.com/mdbcdn/mdb.min.js"></script>
+    <!-- Leaflet -->
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 
 </body>
 
-
 <script type="text/javascript">
-    var officemap = L.map("map", {
+    var officemap = L.map("map-contact", {
         zoomControl: true,
         zoom: 18,
         maxZoom: 19,
@@ -88,9 +346,9 @@
     });
     officemap.setView([14.656487159193421, 121.06958001852037], 17);
 
-    var basemap = L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-        maxZoom: 19, 
-        attribution: '&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    var basemap = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
     });
     officemap.addLayer(basemap);
     

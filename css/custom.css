@@ -26,39 +26,23 @@ body {
   background-color: white;
 }
 
-#header {
-  height: 305px;
-  text-indent: 0px;
-  margin-bottom: 0%;
-  background: url('../img/header/header_site.png');
-  background-repeat: no-repeat;
-  background-position: left;
+html,
+body {
+  height: 100%;
+}
+.full-bg-img {  
+    background: url("http://mdbootstrap.com/images/regular/nature/img%20(1).jpg") no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-#header h1 {
-  font-family: 'Bitter', serif;
-  font-size: 78px;
-  line-height: 72px;
-  margin-left: 3%;
-  padding-top: 3%;
-  color: #0f0f0f
+.top-nav-collapse {
+    background-color: #4285F4;
 }
 
-#header h2 {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 26px;
-  margin-left: 3%;
-  line-height: 20px;
-  color: #5f5f5f;
+/*Maps*/
+#map-contact {
+  height: 400px;
 }
-
-
-#map {
-  height: 320px;
-  width: 50%;
-}
-
-#sensors {
-  height: 480px;
-}
-
