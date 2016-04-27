@@ -50,6 +50,9 @@
     <!-- Leaflet -->
     <link rel="stylesheet" href="components/leaflet-0.7.7/leaflet.css" />
 
+    <!-- Leaflet extra markers -->
+    <link rel="stylesheet" href="components/leaflet-extra-markers/css/leaflet.extra-markers.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
     
@@ -197,7 +200,7 @@
                                     <p>A brief introduction into the concepts involved in solar radiation modelling.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +214,7 @@
                                     <p>An introduction to GRASS GIS and its solar radiation model r.sun.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -225,7 +228,7 @@
                                     <p>A GRASS GIS script that automates the computation of monhtly average clear-sky GHI rasters using an elevation raster and a Linke turbidity csv.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +246,7 @@
                                     <p>:D</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +260,7 @@
                                     <p>:D</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +274,7 @@
                                     <p>:D</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <a href="#">GET IT HERE</a>
                                 </div>
                             </div>
                         </div>
@@ -284,13 +287,14 @@
 
                         <!--About column-->
                         <div class="col-md-4">
-                            <div class="card blue-grey darken-1">
-                                <div class="card-content white-text">
-                                    <span class="card-title"><em>~~~</em></span>
-                                    <p>:D</p>
+                            <div class="card white darken-1">
+                                <div class="card-content unique-color-dark-text">
+                                    <span class="card-title">
+                                        <em style="color: #212121">Silicon Pyranometers installed in the Philippines</em>
+                                    </span>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">HERE</a>
+                                    <p>The map to the right shows the silicon pyranometers installed by REMap-SOLAR with the help of its partner SUCs and HEIs.</p>
                                 </div>
                             </div>
                         </div>
@@ -407,6 +411,7 @@
     <!-- Leaflet -->
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
+
     <!-- Using components -->
     <!-- JQuery -->
     <!-- <script type="text/javascript" src="components/mdb-3.3.3/js/jquery.min.js"></script> -->
@@ -419,6 +424,9 @@
     
     <!-- Leaflet -->
     <!-- <script type="text/javascript" src="components/leaflet-0.7.7/leaflet.js"></script> -->
+
+    <!-- Leaflet extra markers -->
+    <script src="components/leaflet-extra-markers/js/leaflet.extra-markers.min.js"></script>
     
 
 
@@ -471,7 +479,7 @@
     sensormap.setMaxBounds([[3.0, 115.0],[23.0, 128.0]]);
     sensormap.setView([13.4, 121.8], 6);
 
-    sensormap.addLayer(Stamen_TonerLite);
+    sensormap.addLayer(OpenStreetMap_HOT);
 
     /*Sensors*/
     
@@ -482,161 +490,55 @@
         }
     };
 
-
-</script>
-
-</html>
-
-<!--  
     var sensors = [
     {
         "type": "Feature",
         "properties": {
-            "name": "Sensor 01",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
+            "name": "Pyranometer 01",
+            "suc": "MSU-IIT",
+            "popupContent": "Sensor Type: <b>Silicon Pyranometer</b>"
+            +"<br>SUC-in-charge: <b>MSU-IIT</b>"
+            +"<br>Date of installation: <b>2016-03-30</b>"
         },
         "geometry":{
             "type": "Point",
-            "coordinates": []
+            "coordinates": [124.24372, 8.242167]
         }
     }, 
     {
         "type": "Feature",
         "properties": {
-            "name": "Sensor 02",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
+            "name": "Pyranometer 02",
+            "suc": "UP Mindanao",
+            "popupContent": "Sensor Type: <b>Silicon Pyranometer</b>"
+            +"<br>SUC-in-charge: <b>UP Mindanao</b>"
+            +"<br>Date of installation: <b>2016-04-01</b>"
         },
         "geometry":{
             "type": "Point",
-            "coordinates": []
-        }
-    }
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 03",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }, 
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 04",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 05",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }, 
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 06",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 07",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }, 
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 08",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 09",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }, 
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 10",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 11",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
-        }
-    }, 
-    {
-        "type": "Feature",
-        "properties": {
-            "name": "Sensor 12",
-            "suc": "Name of SUC",
-            "popupContent": "Sensor Name, Address"
-        },
-        "geometry":{
-            "type": "Point",
-            "coordinates": []
+            "coordinates": [125.48486, 7.08581]
         }
     }
     ];
 
+    var sunMarker = L.ExtraMarkers.icon({
+        icon: 'fa-sun-o',
+        markerColor: 'yellow',
+        shape: 'star',
+        prefix: 'fa'
+    });
+
     L.geoJson(sensors, {
-        onEachFeature: onEachFeature
+        onEachFeature: onEachFeature,
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {icon: sunMarker,})
+        }
     }).addTo(sensormap);
 
-//-->
+
+
+
+</script>
+
+</html>
+                                                                                                                                  
