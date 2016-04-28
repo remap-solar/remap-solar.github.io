@@ -70,11 +70,20 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;  
 }
 
+.team-bg-img {
+  background: url("../img/site/about.png") no-repeat fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+
+
 /*MAPS*/
 #map-contact {
   height: 400px;
 }
 
 #map-sensor {
-  height: 800px;
+  height: 900px;
 }
