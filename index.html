@@ -619,9 +619,47 @@
     }
     ];
 
+    var windsolar = [
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "WXXX",
+            "suc": "MMSU",
+            "popupContent": "Sensor Type: <b>Silicon Pyranometer (w/ WIND)</b>"
+            +"<br>SUC/HEI-in-charge: <b>MMSU</b>"
+            +"<br>Date of installation: <b>2016-04-15</b>"
+        },
+        "geometry":{
+            "type": "Point",
+            "coordinates": [120.592858, 18.2035]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "WXXX",
+            "suc": "MMSU",
+            "popupContent": "Sensor Type: <b>Silicon Pyranometer (w/ WIND)</b>"
+            +"<br>SUC/HEI-in-charge: <b>UP Cebu</b>"
+            +"<br>Date of installation: <b>2016-05-23</b>"
+        },
+        "geometry":{
+            "type": "Point",
+            "coordinates": [123.1102060, 10.8826030]
+        }
+    }
+    ];
+
     var sunMarker = L.ExtraMarkers.icon({
         icon: 'fa-sun-o',
         markerColor: 'yellow',
+        shape: 'star',
+        prefix: 'fa'
+    });
+
+    var sunWindMarker = L.ExtraMarkers.icon({
+        icon: 'fa-sun-o',
+        markerColor: 'blue',
         shape: 'star',
         prefix: 'fa'
     });
@@ -630,6 +668,13 @@
         onEachFeature: onEachFeature,
         pointToLayer: function(feature, latlng) {
             return L.marker(latlng, {icon: sunMarker,})
+        }
+    }).addTo(sensormap);
+
+    L.geoJson(windsolar, {
+        onEachFeature: onEachFeature,
+        pointToLayer: function(feature, latlng) {
+            return L.marker(latlng, {icon: sunWindMarker,})
         }
     }).addTo(sensormap);
 
